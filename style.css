@@ -1,131 +1,141 @@
+/* General body styling */
 body {
-	background-color: rgb(33, 39, 33);
+	background-color: rgb(33, 39, 33); /* Dark background color */
 	margin: 0; /* Reset margin to zero */
 	padding: 0; /* Reset padding to zero */
-  }
-  
-  #text_stuff {
-	color: black;
-	width: auto;
-	background-color: rgb(155, 154, 154);
-	margin-left: 15%;
-	margin-right: 15%;
-	padding-left: 5px;
-	padding-right: 5px;
+}
 
-  }
+/* Styling for the main text container */
+#text_stuff {
+	color: black; /* Text color */
+	width: auto; /* Automatic width */
+	background-color: rgb(155, 154, 154); /* Light gray background */
+	margin-left: 15%; /* Left margin */
+	margin-right: 15%; /* Right margin */
+	padding-left: 5px; /* Left padding */
+	padding-right: 5px; /* Right padding */
+}
 
-  #text_stuff a {
-	color: #103162;
-	
-  }
-  
-  #mybanner {
-	width: auto;
-	height: auto;
-	scale: 1;
-	margin-bottom: -5px;
-  }
-  
-  h1 {
-	text-align: center;
-  }
-  
-  #banner_and_buttons {
-	width: auto;
-	height: auto;
-	background-color: rgb(136, 28, 28);
-	border-bottom: 6px solid black;
-	
-  }
-  
-  #buttonTable {
-	background-color: rgb(33, 39, 33);
-	border: 6px solid black;
-	border-bottom: none;
-	width: auto;
-	
-  }
+/* Styling for links inside the text container */
+#text_stuff a {
+	color: #103162; /* Link color */
+}
 
-  .redButton {
-	position: relative;
-	width: 200px;
-  }
-  
-  footer {
-	text-align: center;
-	color: white;
-	padding: 10px;
-	background-color: rgb(136, 28, 28);
-	position: relative;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-  }
-  
-  /* Media query for smaller devices */
-  @media (max-width: 768px) {
+/* Styling for the banner image */
+#mybanner {
+	width: auto; /* Automatic width */
+	height: auto; /* Automatic height */
+	scale: 1; /* Default scale */
+	margin-bottom: -5px; /* Negative bottom margin */
+}
+
+/* Center align all h1 elements */
+h1 {
+	text-align: center; /* Center alignment */
+}
+
+/* Styling for the banner and buttons container */
+#banner_and_buttons {
+	width: auto; /* Automatic width */
+	height: auto; /* Automatic height */
+	background-color: rgb(136, 28, 28); /* Dark red background */
+	border-bottom: 6px solid black; /* Black bottom border */
+}
+
+/* Styling for the button table */
+#buttonTable {
+	background-color: rgb(33, 39, 33); /* Dark background color */
+	border: 6px solid black; /* Black border */
+	border-bottom: none; /* No bottom border */
+	width: auto; /* Automatic width */
+}
+
+/* Styling for individual buttons */
+.redButton {
+	position: relative; /* Relative positioning */
+	width: 200px; /* Fixed width */
+}
+
+/* Styling for the footer */
+footer {
+	text-align: center; /* Center alignment */
+	color: white; /* White text color */
+	padding: 10px; /* Padding */
+	background-color: rgb(136, 28, 28); /* Dark red background */
+	position: relative; /* Relative positioning */
+	width: 100%; /* Full width */
+	left: 0; /* Align to the left */
+	bottom: 0; /* Align to the bottom */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
 	#text_stuff {
-	  margin-left: 20px;
-	  margin-right: 20px;
+		margin-left: 20px; /* Reduced left margin */
+		margin-right: 20px; /* Reduced right margin */
 	}
-  }
-
-/* Side Bar menu */
-.sidebar{
-	height: fit-content;
-	width: fit-content; /* Set the width of the sidebar */
-  	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  	z-index: 1; /* Stay on top */
-  	bottom: 0; /* Stay at the bottom */
-  	left: 0;
-  	background-color: rgb(136, 28, 28); 
-  	overflow-x: auto; /* Disable horizontal scroll */
-	padding: 10px 10px 10px;
-	border: 7px solid black;
 }
 
-/* The navigation menu links */
+/* Styling for the sidebar menu */
+.sidebar {
+	height: fit-content; /* Fit content height */
+	width: fit-content; /* Fit content width */
+	position: fixed; /* Fixed positioning */
+	z-index: 1; /* Stay on top */
+	bottom: 0; /* Align to the bottom */
+	left: 0; /* Align to the left */
+	background-color: rgb(136, 28, 28); /* Dark red background */
+	overflow-x: auto; /* Disable horizontal scroll */
+	padding: 10px 10px 10px; /* Padding */
+	border: 7px solid black; /* Black border */
+}
+
+/* Styling for the sidebar links */
 .sidebar a {
-	padding: 6px 8px 6px 16px;
-	font-size: 20px;
-  }
+	padding: 6px 8px 6px 16px; /* Padding */
+	font-size: 20px; /* Font size */
+}
 
-  .sidebar a:link {
-	color: black;
-  }
-  
-  .sidebar a:visited {
-	color: black;
-  }
+/* Styling for unvisited sidebar links */
+.sidebar a:link {
+	color: black; /* Black color */
+}
 
+/* Styling for visited sidebar links */
+.sidebar a:visited {
+	color: black; /* Black color */
+}
+
+/* Styling for the waterfall image */
 .waterfall {
-	width: 20%;
-	position: inherit;
-	float: right;
-	border: 10px solid rgb(136, 28, 28);
-	
+	width: 20%; /* Fixed width */
+	position: inherit; /* Inherit positioning */
+	float: right; /* Float to the right */
+	border: 10px solid rgb(136, 28, 28); /* Dark red border */
 }
 
+/* Styling for embedded PDF */
 .pdf-embed {
-	width: 600px; /* Adjust the width as needed */
-    height: 800px; /* Adjust the height as needed */
-    display: block; /* Ensure it takes up space vertically */
-    margin: 20px 0; /* Add some margin for spacing */
-	
-	
+	width: 600px; /* Fixed width */
+	height: 800px; /* Fixed height */
+	display: block; /* Block display */
+	margin: 20px 0; /* Vertical margin */
 }
+
+/* Styling for the resume section */
 #resume-section {
-    overflow: hidden; /* Ensure the section contains its children */
-    padding: 20px; /* Add some padding for better spacing */
+	overflow: hidden; /* Contain children */
+	padding: 20px; /* Padding */
 }
 
+/* Styling for the socials table */
 #socials {
-	border: 10px solid rgb(136, 28, 28);
+	border: 10px solid rgb(136, 28, 28); /* Dark red border */
 }
-.jacksonhole {
-	border: 10px solid rgb(136, 28, 28);
-	width: 65%;
-	float: right;
 
+/* Styling for the Jackson Hole image */
+.jacksonhole {
+	border: 10px solid rgb(136, 28, 28); /* Dark red border */
+	width: 65%; /* Fixed width */
+	float: right; /* Float to the right */
 }
