@@ -80,10 +80,12 @@ footer {
 		display: flex; /* Use flexbox layout */
 		flex-direction: column; /* Stack items vertically */
 		align-items: center; /* Center align items */
+		width: auto; /* Automatic width */
 	}
 
 	/* Make individual red buttons wrap */
 	#buttonTable {
+		width: max-content; /* Automatic width */
 		display: flex; /* Use flexbox layout */
 		flex-wrap: wrap; /* Allow wrapping */
 		justify-content: center; /* Center align items */
@@ -96,6 +98,14 @@ footer {
 		margin: 5px; /* Add margin for spacing */
 		border: 4px solid rgb(33, 39, 33); /* Black border */
 		border-radius: 30%;
+	}
+	.sidebar {
+		display: none; /* Hide sidebar */
+	}
+
+	.pdf-embed {
+		width: 80%; /* Full width */
+		
 	}
 }
 
@@ -139,7 +149,7 @@ footer {
 
 /* Styling for embedded PDF */
 .pdf-embed {
-	width: 600px; /* Fixed width */
+	width: 100%; /* Fixed width */
 	height: 800px; /* Fixed height */
 	display: block; /* Block display */
 	margin: 20px 0; /* Vertical margin */
