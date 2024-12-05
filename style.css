@@ -74,6 +74,29 @@ footer {
 		margin-left: 20px; /* Reduced left margin */
 		margin-right: 20px; /* Reduced right margin */
 	}
+	
+	/* Make banner and buttons wrap */
+	#banner_and_buttons {
+		display: flex; /* Use flexbox layout */
+		flex-direction: column; /* Stack items vertically */
+		align-items: center; /* Center align items */
+	}
+
+	/* Make individual red buttons wrap */
+	#buttonTable {
+		display: flex; /* Use flexbox layout */
+		flex-wrap: wrap; /* Allow wrapping */
+		justify-content: center; /* Center align items */
+		background-color: rgb(136, 28, 28); /* Dark red background */
+	}
+
+	/* Adjust individual button styling */
+	.redButton {
+		width: 125px; /* Adjust width for smaller screens */
+		margin: 5px; /* Add margin for spacing */
+		border: 4px solid rgb(33, 39, 33); /* Black border */
+		border-radius: 30%;
+	}
 }
 
 /* Styling for the sidebar menu */
