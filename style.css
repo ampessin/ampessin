@@ -94,10 +94,11 @@ footer {
 
 	/* Adjust individual button styling */
 	.redButton {
-		width: 125px; /* Adjust width for smaller screens */
+		max-width: 125px;
+		width: auto; /* Adjust width for smaller screens */
 		margin: 5px; /* Add margin for spacing */
-		border: 4px solid rgb(33, 39, 33); /* Black border */
-		border-radius: 30%;
+		border: 4px solid rgb(0, 0, 0); /* Black border */
+		border-radius: 60%;
 	}
 	.sidebar {
 		display: none; /* Hide sidebar */
@@ -105,8 +106,28 @@ footer {
 
 	.pdf-embed {
 		width: 80%; /* Full width */
+		height: auto; /* Automatic height */
 		
 	}
+	.dictionary {
+		display: none; /* Hide dictionary */
+	}
+}
+
+/* Styling for the dictionary block */
+.dictionary {
+	/*max-height: 100%; /* Fit content height */
+	width: 10%; /* Fit content width */
+	position: absolute; /* Fixed positioning */
+	z-index: auto; /* Stay on btoom */
+	top: 450px; /* Align to the top */
+	right: 0px; /* Align to the right */
+	background-color: rgb(136, 28, 28); /* Dark red background */
+	overflow-y: visible; /* Disable verticle scroll */
+	padding: 10px 10px 10px 10px; /* Padding */
+	border: 7px solid black; /* Black border */
+	border-top: 3.5px solid black; 
+	border-bottom: 3.5px solid black;
 }
 
 /* Styling for the sidebar menu */
@@ -149,10 +170,9 @@ footer {
 
 /* Styling for embedded PDF */
 .pdf-embed {
-	width: 100%; /* Fixed width */
+	width: 85%; /* Fixed width */
 	height: 800px; /* Fixed height */
 	display: block; /* Block display */
-	margin: 20px 0; /* Vertical margin */
 }
 
 /* Styling for the resume section */
@@ -171,4 +191,22 @@ footer {
 	border: 10px solid rgb(136, 28, 28); /* Dark red border */
 	width: 65%; /* Fixed width */
 	float: right; /* Float to the right */
+}
+.hangman {
+	width: 50%;
+	
+}
+.data_explore_img {
+	width: 60%;
+}
+.calc_img {
+	width: 100%;
+	
+}
+#project_table {
+	width: 100%;
+}
+
+#project_table img {
+	align-items: center;
 }
